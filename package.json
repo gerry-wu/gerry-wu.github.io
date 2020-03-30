@@ -6,6 +6,7 @@
   "author": "LekoArts <hello@lekoarts.de>",
   "license": "MIT",
   "starter-name": "gatsby-starter-portfolio-cara",
+  "homepage": "https://gerrywu1990.github.io",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -13,9 +14,14 @@
     "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d public"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.9",
     "@lekoarts/gatsby-theme-cara": "^1.1.1",
     "gatsby": "^2.13.72",
     "gatsby-plugin-google-analytics": "^2.1.8",
